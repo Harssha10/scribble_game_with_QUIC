@@ -20,4 +20,12 @@ generate server and client certificates using openssl for quic connection establ
 ```
 openssl req -x509 -newkey rsa:2048 -keyout server_key.pem -out server_cert.pem -days 365 -nodes -addext "subjectAltName = DNS:localhost"
 ```
+## Analysis:
+Analysis is done by opening and establishing connection to public ports using [Playit.gg free tcp,udp ports](https://playit.gg/). and tunneling them to local ports where the server is running,for capturing  real network scenarios.
 
+## drawing:
+![](/Images/drawing.png)
+## guessing:
+![](Images/Correct.png)
+## metrics:
+![](Images/analysis.png)
